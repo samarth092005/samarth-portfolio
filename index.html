@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samarth Agarwal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f1b2b;
+      color: #fff;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #001f3f;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+      margin-right: 20px;
+    }
+
+    .navbar ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 6px 10px;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .navbar a:hover {
+      color: #66ccff;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #66ccff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    #home {
+      padding-top: 80px;
+    }
+
+    #home h1 {
+      text-align: center;
+      font-size: 3em;
+      margin: 40px 0;
+    }
+
+    #about {
+      text-align: center;
+      padding: 50px 20px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #f1f1f1;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin: 0 auto 50px;
+      max-width: 900px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #001f3f;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+      display: block;
+    }
+
+    .edu-box, .exp-box, .skills-box, .projects-box, .contact-box {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .projects-box .project {
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      padding: 10px;
+      font-size: 1em;
+      background-color: #66ccff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #3399cc;
+    }
+
+    a {
+      color: #66ccff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">My-Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="/Resume.pdf" download>Download Resume</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Hey, I'm Samarth Agarwal</h1>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <div class="about-container">
+      <img src="smarth.jpg" class="profile-img" alt="Samarth Agarwal">
+      <div class="about-text">
+        <p>
+          I’m Samarth Agarwal, a passionate and self-motivated B.Tech student with a specialization in AI and Analytics, 
+          currently focused on mastering full-stack web development and artificial intelligence. With a strong foundation 
+          in Python, HTML, CSS, and JavaScript, I’m building interactive, responsive websites and diving deep into AI/ML 
+          using libraries like NumPy, pandas, and TensorFlow.
+          <br><br>
+          I'm currently developing real-world projects that integrate both frontend and backend technologies, aiming to 
+          build scalable, user-focused applications. I’m also exploring data-driven solutions in mental health detection 
+          and predictive analytics as part of my ongoing internship and research work.
+          <br><br>
+          Beyond academics, I love being part of tech clubs and campus communities, where I actively contribute to team 
+          projects and events. I thrive on collaboration, innovation, and solving real-world problems through code. 
+          Let’s connect and build something meaningful!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h3>Education</h3>
+    <div class="edu-box">
+      <p><strong>MIT ADT UNIVERSITY, Pune, India</strong><br />
+      B.Tech IT – 2nd Year<br />
+      CGPA: 7.3</p>
+
+      <p><strong>Senior Secondary (12th), CBSE</strong><br />
+      Percentage: 72%</p>
+
+      <p><strong>Secondary (10th), CBSE</strong><br />
+      Percentage: 89%</p>
+    </div>
+  </section>
+
+  <section id="experiences">
+    <h3>Experiences</h3>
+    <div class="exp-box">
+      <p><strong>Active Club Member:</strong> AWS Club, TCCS Club, Mirage Club</p>
+      <p><strong>Summer Internship:</strong> Intern at IEEE – Worked on research-oriented projects in AI and data analytics during summer internship.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skills-box">
+      <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Backend:</strong> Python</p>
+      <p><strong>Databases:</strong> SQL</p>
+      <p><strong>Version Control:</strong> Git & GitHub</p>
+      <p><strong>Documentation:</strong> Expert in Google Docs and Report writing</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects-box">
+      <div class="project">
+        <h4>MIT Information Dissemination System</h4>
+        <p>
+          Developed during the SHODH 1.0 event — a website/app aimed at circulating real-time information and daily updates within college campuses.
+        </p>
+      </div>
+      <div class="project">
+        <h4>Beach Info & Geo-location App (SIH 2024)</h4>
+        <p>
+          Participated in SIH 2024 with a team-developed application to provide beach-related information, geolocation features, and weather-based alerts for tourists.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <div class="contact-box">
+      <p><strong>Email:</strong> <a href="mailto:samarthagarwal.413@gmail.com">samarthagarwal.413@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919326514585">+91 9326514585</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://surl.gd/hyqqed">Samarth_Agarwal</a></p>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/xldnnddv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Samarth Agarwal. All rights reserved.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/samarth-agarwal-6693641b3" target="_blank">LinkedIn</a>
+      |
+      <a href="https://github.com/samarth092005" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
